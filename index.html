@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Web Personal</title>
+</head>
+<body>
+    <!-- anclaje para ir al inicio -->
+    <a id="anclaje_inicio"></a>
+    <!-- encabezado de la pagina web con nombres, lema profesional y foto personal -->
+     <header>
+    <h1>Iusany Cristhel Tubay Ramirez</h1>
+    <P>La información correcta, en el momento correcto.</P>
+    <hr>
+    <img src="Foto/IMG_20221001_233835.jpg" alt="Foto personal" width="300"> 
+    <br>
+    </header>
+    <!-- menú de navegacion en la página web -->
+    <nav>
+        <ul>
+    <li> <a href="#sobremi">Sobre Mí</a> <br> </li>
+    <li> <a href="#intereses">Mis Intereses o Logros</a> <br> </li>
+    <li> <a href="#tabla">Habilidades</a> <br> </li>
+    <li> <a href="#multimedia">Presentacion Personal</a> <br> </li>
+    <li> <a href="#formulario">Formulario de Contacto</a> <br> </li>
+    <!-- anclaje para ir al final -->
+    <li> <a href="#anclaje_fin">Ir al Final</a> </li>
+    </ul>
+    </nav>
+    <!-- descripción personal -->
+     <a id="sobremi"></a>
+     <section id="sobremi">
+        <h2>Sobre Mí</h2>
+        <p>
+        Mi nombre <strong>es Iusany Tubay</strong>, tambien conocida como <strong><em>Iusa o Iusy</em></strong> por mis familiares o personas más allegadas.
+        Me considero una persona tranquila, divertida con las personas de más confianza, responsable, respetuosa, 
+        leal, amable, con disposición para ayudar a los demás y enfocada en mis metas. 
+        Me gusta el color morado. Tambien los animales, aunque más me gustan los gatos, tanto que tenemos <mark>4 gatos</mark> en mi casa, todos demasiados consentidos.
+        No soy mucho de tener perros pero tenia un husky, llamado <mark>Togo</mark>, el cual queria bastante. Lamentablemente hace 2 meses fallecio a causa de una enfermedad 
+        pero todavia lo sigo recordando y queriendo demasiado.
+        En mis tiempos libres disfruto de pasar tiempo de calidad con mi familia y mi novio, hago tambien mis actividades académicas
+        y algun actividad que me ayude a liberar mi mente, como escuchar música, salir a pasear, ver series, ver videos, etc.
+        Mi objetivo es desarrollarme profesionalmente y aportar algo positivo a mi entorno. 
+        </p>
+     </section>
+    <!-- lista ordenada de intereses o logros -->
+     <a id="intereses"></a>
+     <section id="intereses o logros">
+        <h2>Lista de Intereses o Logros</h2>
+    <ol>
+    <li>Me interesa escuchar música y disfruto escuchar diferentes géneros.</li>
+    <li>Me gusta viajar y conocer nuevos lugares.</li>
+    <li>Me gusta trabajar en equipo y colaborar con otras personas.</li>
+    <li>He mejorado mis habilidades de lectura y redacción.</li>
+    <li>Me interesa la fotografía y capturar momentos importantes.</li>
+    <li>Me interesa ayudar a otros compañeros cuando tienen dudas.</li>
+    <li>Conseguí desarrollar más paciencia.</li>
+    <li>Desarrollé más confianza al expresar mis ideas frente a otros.</li>
+    </ol>
+    </section>
+    <!-- tabla avanzada de habilidades -->
+     <a id="tabla"></a>
+    <section id="habilidades">
+        <h2>Tabla de habilidades</h2>
+     <table border="3">
+      <thead>
+      <tr><th>Habilidades</th>
+      </thead>
+      <tbody>
+       <tr><td>Sé colaborar con otras personas, escuchar sus ideas y aportar soluciones para lograr un objetivo común.</td>
+       <tr><td>Me esfuerzo por comprender los sentimientos y puntos de vista de los demás, manteniendo siempre una actitud respetuosa.</td>
+       <tr><td>Soy capaz de manejar desacuerdos o dificultades buscando soluciones pacíficas y equilibradas.</td>
+       <tr><td>Mantengo la calma en situaciones difíciles y procuro actuar con prudencia.</td>
+       <tr><td>Puedo organizar tareas y distribuir responsabilidades dentro de un equipo.</td>
+       <tr><td>Mantengo buenas relaciones con compañeros, profesores y personas de mi entorno.</td>
+       </tbody>
+       </table>
+    </section>
+    <!-- audio de presentación personal -->
+     <a id="multimedia"></a>
+     <section id="presentación">
+     <h2>Presentación Personal</h2>
+     <audio controls>
+     <source src="audio/presentación.aac" type="audio/mpeg">
+     Tu navegador no soporta audio.
+     </audio>
+     </section>
+    <!-- formulario avanzado de cotacto  -->
+     <a id="formulario"></a>
+     <section id="contacto">
+     <h2>Formulario de contacto</h2>
+     <form>
+    <fieldset>
+    <legend>Registro</legend> <br>
+    <label for="nombre">Nombre completo</label>
+    <input name="nombre" type="text" required> <br>
+    <label for="email">Correo:</label> 
+    <input type="email" id="email" name="email" required> <br>
+    <label for="edad">Edad:</label> 
+    <input type="number" id="edad" name="edad" min="18"> <br>
+    <label for="pais">País:</label> 
+    <select id="pais" name="pais">  
+    <option value="ec">Ecuador</option> 
+    <option value="co">Colombia</option>
+    <option value="pe">Peru</option>
+    <option value="o">Otro</option>
+    </select><br> <br>
+    <label>Género:</label>
+    <input type="radio" name="genero" value="M" required> Masculino
+     <input type="radio" name="genero" value="F" required> Femenino 
+     <input type="radio" name="genero" value="O" required> Otro <br>
+     <label>Intereses:</label>
+     <input type="checkbox" name="deporte"> Deporte
+     <input type="checkbox" name="lectura"> Lectura
+     <input type="checkbox" name="tecnología"> Tecnología
+     <input type="checkbox" name="otro"> Otro <br> <br>
+     <textarea name="comentarios" rows="4" cols="30">Escribe aquí...
+     </textarea><br>
+     <input type="submit" value="Enviar">
+     </fieldset>
+     </form>
+     </section>
+    <!-- Pie de página con derechos y redes sociales -->
+    <footer>
+    <p>&copy; 2025. Iusany Tubay. Todos los derechos reservados.</p>
+    <p>
+    Sígueme en: <a href="https://www.tiktok.com/@iusa_17?_r=1&_t=ZM-91SSzcDlP7T" target="_blank">TikTok</a> 
+    · <a href="https://www.facebook.com/share/1A477bt56t/" target="_blank">Facebook</a> 
+    · <a href="https://www.instagram.com/cristhel_tubay17?igsh=MWl3M3ViMGNtam4xdQ==" target="_blank">Instagram</a>
+    </p>
+    </footer>
+    <!-- anclaje para ir al final -->
+    <a id="anclaje_fin"></a>
+    <!-- anclaje para ir al inicio -->
+    <a href="#anclaje_inicio">Ir al Inicio</a> <br>
+
+</body>
+</html>
